@@ -1,0 +1,57 @@
+html, body{
+    font-family: 'Raleway', sans-serif;
+    height:100%;
+ }
+
+.link{
+    font-size:16px;
+    font-weight:300;
+    text-align:center;
+    position:relative;
+    height:40px;
+    line-height:40px;
+    margin-top:10px;
+    overflow:hidden;
+    width:90%;
+    margin-left:5%;
+    cursor:pointer;
+    text-decoration: none;
+    color: black;
+ }
+ 
+aside {
+    padding: 10px;
+    min-width: 250px;
+    min-height: auto;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+aside a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #235B4E;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+aside a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
