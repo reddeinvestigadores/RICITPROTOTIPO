@@ -1,16 +1,16 @@
+
 html, body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     height:100%;
  }
 
+p{
+  font-size: 16px;
+}
+
 .link{
-    font-size:16px;
-    font-weight:300;
     text-align:center;
     position:relative;
-    height:40px;
-    line-height:40px;
-    margin-top:10px;
     overflow:hidden;
     width:90%;
     margin-left:5%;
@@ -18,40 +18,155 @@ html, body{
     text-decoration: none;
     color: black;
  }
- 
-aside {
-    padding: 10px;
-    min-width: 250px;
-    min-height: auto;
+
+ .card-gap-6{
+  padding-bottom: 60px;
+ }
+
+ /* CONTENT CONTAINER*/
+.container-content {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  height: auto;
 }
 
-aside ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+ /* CARDS CONTAINER*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  margin-block: 2rem;
 }
 
-aside li {
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    text-align: center;
+
+/* SIDE NAV BAR*/
+
+.menu-card{
+  width: 250px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  border-radius: 1em;
+  padding: 0;
 }
 
-aside a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #235B4E;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+  /* NEWS CARD CONTENT*/
+  img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
   }
 
-aside a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
+  
+  .news-card {
+    max-height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border-radius: 1em;
+    background: white;
+  }
+
+  .news-card:hover, .event-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  
+  .card__body h4 {
+    z-index: 10;
+    font-size: 18px;
+    padding-bottom: 0.75rem;
+    text-transform: capitalize;
+  }
+
+  /*CARD-FOOTER*/
+  
+  .card__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  .user {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+  }
+  
+  .user__info span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9F2241;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .user__info label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #10312B;
+  }
+
+  /*EVENT CARD CONTENT */
+
+  .event-card{
+    display: flex;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 700px;
+    max-height: 300px;
+  }
+
+  .description{
+    position: relative;
+    padding-right: 10px;
+    padding: 1;
+  }
+
+  .columna-izquierda {
+    width: 1500px;
+    display: flex;
+    padding: 1rem;
+  }
+
+  .event-img{
+    display: block;
+    object-fit: cover;
+  }
+

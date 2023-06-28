@@ -1,0 +1,49 @@
+
+.header{
+    text-align: justify;
+    width: 100%;
+    margin: 0% auto;
+    padding: 0;
+}
+
+.category-menu {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    padding: 0;
+}
+
+.card {
+    max-height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    background: white;
+    margin-bottom: 50px;
+  }
+
+  .news-card:hover, .event-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .event-date {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .event-info span {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #9F2241;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
