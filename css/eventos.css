@@ -1,11 +1,4 @@
 
-.header{
-    text-align: justify;
-    width: 100%;
-    margin: 0% auto;
-    padding: 0;
-}
-
 .category-menu {
     width: 350px;
     height: fit-content;
@@ -16,9 +9,9 @@
     padding: 0;
 }
 
-.card {
+.events-card {
     max-height: 700px;
-    width: 300px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -27,7 +20,7 @@
     margin-bottom: 50px;
   }
 
-  .news-card:hover, .event-card:hover {
+  .events-card:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
