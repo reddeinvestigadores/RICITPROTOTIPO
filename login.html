@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo de nueva página para GOB.mx</title>
+
+
+    <!-- CSS -->
+    <link href="https://framework-gb.cdn.gob.mx/gm/v4/image/favicon.ico" rel="shortcut icon">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v4/css/main.css" rel="stylesheet">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v4/qa/css/main.css">
+    <link href="https://framework-gb.cdn.gob.mx/gm/accesibilidad/css/gobmx-accesibilidad.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--COMPONENTES-->
+    <script type="module" src="cmp/navbar.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Contenido -->
+    <main class="page">
+      <div class="container">
+        <user-navbar></user-navbar>
+
+      </div>
+      <section class="content" id="content-body">
+        <div class="container">
+          <div class="text-center">
+            <form class="login-form">
+              <img class="mb-4" src="img/Logo_Ricit.png" alt="" width="100%" height="100%">
+              <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
+              <label for="inputEmail" class="sr-only">Correo Electrónico</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electrónico" required="yes" autofocus="">
+              <label for="inputPassword" class="sr-only">Contraseña</label>
+              <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Contraseña" required="yes">
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+
+  </body>
+</html>
